@@ -1,0 +1,55 @@
+<html>
+<head style="color: rgb(128, 15, 15)">
+<link href="D:\Webapp\miniproject\Reystyle.css" rel = "stylesheet" type="text/css">
+  <div class="topnav">
+    <a class="active" href="https://github.com/Anliv">Home</a>
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+  </div>
+</head>
+<body>
+  <h2>Use the following functions to convert your green background into new one!</h2>
+<div>
+<script src = 'Reyjs.js'></script>
+<script src = 'SimpleImage.js'></script>
+<p>
+    <canvas id = 'fg' class = 'redscreen'></canvas>
+    <canvas id = 'bg' class = 'redscreen'></canvas>
+    <canvas id = 'composite' class = 'redscreen'></canvas>
+</p>
+<p>
+    <h>Green background:
+    <input type = 'file' multiple ='false' accept=" image/*" id ='fgimg' onchange="upload1 ()"/>
+    </h>
+    <h>New background:
+    <input type="file" multiple = 'false' accept= "image/*" id = 'bgimg' onchange="upload2 ()"/>
+</h>
+</p>
+<p>
+<h>Click here to change background
+  <input type="button" value="Change background" onclick="createComposite()"/>
+</h>
+</p>
+<p>
+  <canvas id = 'redfilter' class = 'redscreen'></canvas>
+  <h2>
+    Use this function to put a red color on your photo!
+  <input type = 'file' multiple ='false' accept=" image/*" id ='origin' onchange="upload3 ()"/>
+  <input type = 'button' value="Go Red" onclick="Redfilter ()"/>
+</h2>
+</p>
+<p>
+  <canvas id = 'sevencolors' class = 'sevencolors'></canvas>
+  <h2> 
+    Use this function to get Pride photo!
+    <input type = 'file' multiple ='false' accept="image/*" id ='nofilter' onchange="upload4()"/>
+    <input type="button" value="seven colors filter" onclick="sevencolors()"/>
+  </h2>
+
+</p>
+
+</div>
+
+</body>
+</html>
